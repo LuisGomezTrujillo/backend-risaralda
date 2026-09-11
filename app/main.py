@@ -12,6 +12,7 @@ from app.api import (
     routes_tubos,
     routes_pre_sorteos,
     routes_auth,
+    routes_formato_sorteo,
 )
 
 @asynccontextmanager
@@ -50,3 +51,4 @@ app.include_router(routes_sorteos.router)
 app.include_router(routes_resultados.router)
 app.include_router(routes_tubos.router)
 app.include_router(routes_pre_sorteos.router)
+app.include_router(routes_formato_sorteo.router)
