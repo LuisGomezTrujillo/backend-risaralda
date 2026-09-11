@@ -35,8 +35,8 @@ app = FastAPI(title="Lotería del Risaralda API", lifespan=lifespan)
 app.add_middleware(
     CORSMiddleware,
     # allow_origin_regex=r"https?://(localhost:3000|(?:loteria-risaralda)(-git-[\w-]+-[\w]+)?\.vercel\.app)",
-    allow_origin_regex=r"https?://(localhost:3000)",
-    # allow_origin_regex=r"https?://(loteria-risaralda)",
+    # allow_origin_regex=r"https?://(localhost:3000)",
+    allow_origin_regex=r"https?://(loteria-risaralda)",
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
